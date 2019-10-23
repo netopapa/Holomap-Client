@@ -5,13 +5,13 @@ body{
 	position: absolute;
 	top: calc(50% - 165px);
 	left: calc(50% - 165px);
-	transform: rotateZ(90deg);
+	transform: rotateZ(-45deg);
 }
 #globe2 {
 	position: absolute;
 	top: calc(50% - 165px);
 	right: calc(50% - 165px);
-	transform: rotateZ(45deg);
+	transform: scaleX(-1);
 }
 #globe3 {
 	position: absolute;
