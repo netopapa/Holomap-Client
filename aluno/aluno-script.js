@@ -1,5 +1,5 @@
 //Web socket
-
+/*
 var socket = new WebSocket('ws://10.10.80.136:8080');
 
 // Show a connected message when the WebSocket is opened.
@@ -11,7 +11,7 @@ socket.onmessage = function (e) {
     var cord = JSON.parse(e.data);
     mudaMapa(cord);
 };
-
+*/
 function mudaMapa(cord) {
     var position = new WorldWind.Position(cord.lat, cord.lon);
     wwd.goTo(position);
