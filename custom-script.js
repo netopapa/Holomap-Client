@@ -1,11 +1,12 @@
 //Web socket
+/*
 var ip = "10.10.80.136";
 var socket = new WebSocket('ws://' + ip + ':8080');
 
 socket.onopen = function () {
     console.log('WebSocket is connected.');
 };
-
+*/
 var geocoder = new WorldWind.NominatimGeocoder();
 
 // fim web socket
