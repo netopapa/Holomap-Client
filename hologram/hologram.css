@@ -5,7 +5,7 @@ body{
 	position: absolute;
 	top: calc(50% - 165px);
 	left: calc(50% - 165px);
-	transform: rotateZ(-45deg);
+	transform: rotateZ(-90deg);
 }
 #globe2 {
 	position: absolute;
