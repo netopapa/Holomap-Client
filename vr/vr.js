@@ -47,8 +47,8 @@ socket.onopen = function (event) {
 };
 
 socket.onmessage = function (e) {
+	console.table(e);
 	var obj = JSON.parse(e.data);
-	console.table(e.data);
 	if (obj.type == 'layer') {
 		console.table(obj.type);
 		$.get(serviceAddress).done(createLayer).fail(logError);
