@@ -55,14 +55,16 @@ socket.onopen = function (event) {
 };
 
 socket.onmessage = function (e) {
-    var obj = JSON.parse(e.data);
     console.table(e.data);
-    if (obj.type == 'layer') {
-        console.table(obj.type);
-        $.get(serviceAddress).done(createLayer).fail(logError);
-    } else {
-        mudaMapa(obj);
-    }
+	var obj = JSON.parse(e.data);
+	console.table(obj);
+	obj = JSON.parse(obj.utf8Data);
+	if (obj.type == 'layer') {
+		console.table(obj.type);
+		$.get(serviceAddress).done(createLayer).fail(logError);
+	} else {
+		mudaMapa(obj);
+	}
 };
 
 function mudaMapa(cord) {
