@@ -1,6 +1,7 @@
 //Web socket
-/*
-var socket = new WebSocket('ws://10.10.80.136:8080');
+
+var ip = "secure-taiga-64188.herokuapp.com";
+var socket = new WebSocket('ws://' + ip);
 
 // Show a connected message when the WebSocket is opened.
 socket.onopen = function (event) {
@@ -11,7 +12,7 @@ socket.onmessage = function (e) {
     var cord = JSON.parse(e.data);
     mudaMapa(cord);
 };
-*/
+
 function mudaMapa(cord) {
     var position = new WorldWind.Position(cord.lat, cord.lon);
     wwd.goTo(position);

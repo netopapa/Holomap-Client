@@ -8,7 +8,8 @@ wwd1.addLayer(new WorldWind.BMNGLandsatLayer());
 wwd2.addLayer(new WorldWind.BMNGOneImageLayer());
 wwd2.addLayer(new WorldWind.BMNGLandsatLayer());
 
-var socket = new WebSocket('ws://10.10.80.136:8080');
+var ip = "secure-taiga-64188.herokuapp.com";
+var socket = new WebSocket('ws://' + ip);
 
 socket.onopen = function (event) {
     console.log('WebSocket is connected.');

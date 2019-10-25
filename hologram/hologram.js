@@ -47,8 +47,8 @@ var logError = function (jqXhr, text, exception) {
 };
 // FIM HEAT
 
-var ip = "10.10.80.136";
-var socket = new WebSocket('ws://' + ip + ':8080');
+var ip = "secure-taiga-64188.herokuapp.com";
+var socket = new WebSocket('ws://' + ip);
 
 socket.onopen = function (event) {
     console.log('WebSocket is connected.');
