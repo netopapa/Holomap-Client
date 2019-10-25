@@ -1,7 +1,7 @@
 //Web socket
 
 var ip = "secure-taiga-64188.herokuapp.com";
-var socket = new WebSocket('ws://' + ip);
+var socket = new WebSocket('wss://' + ip);
 
 socket.onopen = function () {
     console.log('WebSocket is connected.');
